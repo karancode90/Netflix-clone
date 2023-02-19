@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border;
+            box-sizing: border-box;
+          
+        }
+        body{
+            background:rgb(0, 0, 0) ;
+            color: #fff;
+           
+        }
+        .header{
+              width: 100%;
+              height: 800px;
+              background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://assets.nflxext.com/ffe/siteui/vlv3/83e8c151-107d-4e8f-b95a-d2ba99d49bb9/f1ac72e1-5adc-4caf-bceb-e8ec775414ac/IN-en-20230213-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+              background-size: cover;
+              background-position: center;
+              padding: 10px 8%;
+              position: relative;
+        }
+        nav{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+        }   
+        nav button{
+            border: 0;
+            outline: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .content-header{
+            position:absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,50%);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .content-header h1{
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 600;
+            max-width: 650px;
+        }
+        .content-header h3{
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .gmail{
+            background: #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        .gmail input{
+            flex: 1;
+            border: 0;
+            outline: 0;
+            margin-left: 20px;
+        }
+        .gmail button{
+            background: #db0001;
+            border: 0;
+            outline: 0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 15px 30px;
+
+        }
+        .gmail input{
+            flex: 1;
+            border: 0;
+            outline: 0;
+            margin-left: 20px;
+
+        }
+        .gmail button{
+            background: #db0001;
+            border: 0;
+            outline: 0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        <!-------------feature ------------------->
+        .section{
+            padding: 50px 12%;
+            font-size: 22px;
+        }
+        .row{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .text-col{
+            font-size: 30px;
+            flex-basis:50%;
+            margin-bottom: 20px;
+            text-align: center;
+           
+        }
+       
+        .img-col{
+            flex-basis:50%;
+            margin-bottom: 20px;
+            
+        }
+        .img-col img{
+            display: block;
+            width: 90%;
+            margin: auto;
+        }
+        .section h1{
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+       
+          /*---------FOOTER----------*/
+        .footer{
+            padding: 50px 15% 10px;
+            border-top: 6px solid #333;
+            color: #777;
+        }
+        .footer h2{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+
+        }
+        .footer .col{
+            flex-basis: 25%;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        .footer .col a{
+            display: block;
+            text-decoration: none;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .footer .row{
+            align-items: flex-start;
+            padding: 10px 0;
+        }
+        .boo{
+            height: 30px;
+            width: 60px;
+            background: #db0001;
+            color: #fff;
+            border-radius: 6px solid white;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="header"> 
+      <nav>
+        <img src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="logo" class="logo">
+        <div>
+            <button>English</button>
+            <button>Sign In</button>
+        </div>
+      </nav>
+ 
+   <div class="content-header">
+      <h1>Unlimited movies, TV shows and more.</h1>
+      <h3>Watch anywhere. Cancel anytime.</h3>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="gmail">
+        <input type="email" placeholder="Email address" required>
+       <button type="submit">Get Started</button>
+      </form>
+   </div>
+</div>
+<!-- FEATURE 1 -->
+<div class="section">
+   <div class="row">
+    <div class="text-col">
+        <h1>Enjoy on your TV.</h1>
+        <p>Watch on smart TVs, PlayStation, Xbox, <br>Chromecast, Apple TV, Blu-ray players and <br>more.</p>
+    </div>
+    <div class="img-col">
+        <img src="pic.png" alt="feature" height="500px" width="400px">
+    </div>
+   </div>
+</div>
+<!-- FEATURE 2 -->
+<div class="row">
+    <div class="2.png">
+        <img src="pic.png" alt="feature" height="500px" width="600px">
+    </div>
+    <div class="text-col">
+        <h1>Download your shows to watch offline.</h1>
+        <p>Save your favourites easily and always have something to watch.</p>
+    </div>
+   </div>
+<!-- FEATURE 3 -->
+<div class="row">
+    <div class="text-col">
+        <h1>Watch everywhere.</h1>
+        <p>Stream unlimited movies and TV shows on<br> your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="img-col">
+        <img src="3.png" alt="feature" height="500px" width="400px">
+    </div>
+   </div>
+
+<!-- FEATURE 4 -->
+<div class="row">
+    <div class="img-col">
+        <img src="4.png" alt="feature" height="500px" width="400px">
+    </div>
+    <div class="text-col">
+        <h1>Create profiles for <br>children.</h1>
+        <p>Send children on adventures with their <br>favourite characters in a space made just for <br>them—free with your membership.</p>
+    </div>
+   </div>
+   <div class="footer">
+    <h2>Questions? call 000.333.555.000</h2>
+
+    <div class="row">
+        <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookies Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Corporation Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Centre</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <button class="boo">English</button>
+   </div>
+
+
+
+
+</body>
+</html>
